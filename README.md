@@ -5,6 +5,7 @@
 复制spring-context-indexer源码，把生成的索引文件改成 `META-INF/spring-custom.components` ,修改的源码 `MetadataStore#METADATA_PATH`
 
 使用方式：
+
 1.自己打包 custom-indexer，引入到自己的项目中,【如果目录变了，需要修改resource/META-INF/services javax.annotation.processing.Processor 】
 ```      
 <dependency>
@@ -16,6 +17,7 @@
  </dependency>
  ```
 这种方式是放在项目 lib目录下。也可以自己放到私服上
+
 
 2.在使用的项目中覆盖spring-context-core  CandidateComponentsIndexLoader 源码，使用同名类覆盖的方式
 ```
