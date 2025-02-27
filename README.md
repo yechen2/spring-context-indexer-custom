@@ -15,6 +15,8 @@
      <systemPath>${project.basedir}/lib/custom-indexer-1.0-SNAPSHOT.jar</systemPath>
  </dependency>
  ```
+这种方式是放在项目 lib目录下。也可以自己放到私服上
+
 2.在使用的项目中覆盖spring-context-core  CandidateComponentsIndexLoader 源码，使用同名类覆盖的方式
 ```
 package org.springframework.context.index;
