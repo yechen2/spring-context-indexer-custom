@@ -130,4 +130,4 @@ public final class CandidateComponentsIndexLoader {
 
 ```
 3.增加了一个配置启用覆盖类扫描 spring-custom.components，需要在 **spring.properties** 中配置 或者 加到命令行......
-``` java -jar xxx -D customIndexer=true ```
+``` java -DcustomIndexer=true ........```
